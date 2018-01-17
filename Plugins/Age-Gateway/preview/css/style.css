@@ -1,0 +1,207 @@
+/* CSS Document */
+@import "preview.css";
+
+.age_gate_way_wrap {
+    background: #efefef;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#age_gate_way {
+    float:none;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    width: 40%;
+    padding: 1%;
+    box-shadow: 0 0 25px -5px #888888;
+    border-radius: 10px ;
+}
+
+.age-gate-way-form h2{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.age-gate-way-form a{
+    color:#236BB3;
+    text-decoration:none!important;
+}
+
+.age-gate-way-form a:hover{
+    color:#236BB3;
+    text-decoration:none!important;
+}
+
+.age-gate-way-message {
+  font-size: 1.25em;
+  animation: fadeIn;
+}
+
+@media only screen and (max-width:45em){
+  #age_gate_way { 
+    width: 100%;
+  }
+}
+
+.age-gate-way-overlay {  
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}
+
+.age-gate-way-clear{
+	clear:both;
+}
+
+#age-gate-way-err{
+	color:red;	
+}
+
+.age-gate-way-option{
+	width:33%;
+	float:left;
+    padding:2% 0;
+}
+
+.age-gate-way-form-section{
+	padding:1%;
+}
+
+
+/* gateway form */
+
+.age-gate-way-form input[type=text],
+.age-gate-way-form input[type=password], 
+.age-gate-way-form input[type=email], 
+.age-gate-way-form select,
+.age-gate-way-form textarea{
+	width: 100%;
+    padding: 3px 16px;
+    background-color: transparent;
+    border: 3px solid rgba(255,255,255,0.2);
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    border:1px solid #888;
+}
+
+.age-gate-way-form textarea {
+    min-height: 10em;
+}
+
+.age-gate-way-form input, .age-gate-way-form textarea {
+    width: 100%;
+    padding: 3px 16px;
+    background-color: transparent;
+    border: 3px solid rgba(255,255,255,0.2);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.age-gate-way-form input[type=checkbox]{
+    width: 0px;
+}
+
+.age-gate-way-form-section .age-gate-way-form-button{
+	text-align:center;
+}
+
+.age-gate-way-form .age-gate-way-form-button button {
+    background: #7cccf5;
+    border: 3px solid #7cccf5;
+    color: #ffffff;
+    height: 60px;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box !important;
+}
+.age-gate-way-form .age-gate-way-form-button button > span {
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 9999;
+    line-height: 50px;
+}
+.age-gate-way-form-topic .age-gate-way-form-button button {
+    background: transparent;
+    border: 3px solid #7cccf5;
+    color: #7cccf5;
+    height: 55px;
+    line-height: 54px;
+    padding: 0 70px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+.age-gate-way-form .age-gate-way-form-button button:hover,
+.age-gate-way-form .age-gate-way-form-button button:active {
+    background-color: transparent;
+    border-color: #7cccf5;
+    color: #7cccf5;
+}
+
+.age-gate-way-form-section .age-gate-way-submit-data{
+	padding:10px;
+	border:1px solid #ccc;
+	background-color:#0CF;
+	font-weight:bold;
+	cursor:pointer;	
+	width:120px;
+	margin:1% auto;
+}
+
+.age-gate-way-none{display:none;}
+
+
+@import "compass/css3";
+
+@import url(http://fonts.age-gate-way-googleapis.age-gate-way-com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+@import "compass/reset";
+$fontSans : 'Montserrat', sans-serif;
+ 
+
+$red : #e74c3c ;
+$dark :  #3d3d3d;
+$blue: #6dcff6;
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+
+
+*{ box-sizing:border-box;}
+
+

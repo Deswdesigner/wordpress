@@ -1,0 +1,34 @@
+/* CSS Document */
+
+ul.preview{
+	width:353px;
+	position:fixed;
+    z-index: 150000;
+}
+
+ul.preview li {
+	float:left;
+	list-style:none;
+	display:inline-block;
+	margin:0!important;
+}
+
+ul.preview li a{
+	display:block;
+	margin:0!important;
+	padding:20px;
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+}
+ul.preview li a:hover{
+}
+
+.white{
+	background-color:#fff;
+    color:#000!important;
+}
+
+.dark{
+	background-color:#2b2e33;
+}

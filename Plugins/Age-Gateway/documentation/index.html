@@ -1,0 +1,1240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Age-Gateway </title>
+	<meta name="generator" content="LibreOffice 5.1.5.2 (Linux)"/>
+	<meta name="author" content="Paul Shopi"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2017-05-31T12:11:11.036542297"/>
+	<meta name="description" content="A
+		very simple and effective wordpress plugin to help protect
+		sensitive content from being viewed by users that are under the
+		eligible age. Comes with all countries with age limits included,
+		the user simply selects their country and the age limit is
+		automatically set. Add this age gateway to any post or page using
+		the shortcode [age-gateway] and restrict which pages it should
+		appear on."/>
+	<meta name="" content=""/>
+	<meta name="copyright" content="Paul Shopi"/>
+	<meta name="date" content="2017-05-30T00:00:00+02:00"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name="created" content="00:00:00">
+	<meta name="changed" content="2017-05-30T20:07:26.068825420">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<!-- Documentation Navbar -->
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url();}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+</head>
+<body class="documenter-project-html5-jquery-multi-step-form-" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">HTML5 jQuery Multi-Step Form </a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#wordpress_plugin" title="Wordpress Plugin">Plugin</a></li>
+			<li><a href="#html_structure" title="HTML">HTML</a></li>
+			<li><a href="#css_files_and_structure" title="CSS">CSS</a></li>
+			<li><a href="#javascript" title="Javascript">Javascript</a></li>
+			<li><a href="#deployment" title="Deployment">Deployment</a></li>
+			<li><a href="#security" title="Security">Security</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+		<h1>Age-Gateway</h1>
+		<p><span >A
+		very simple and effective wordpress plugin to help protect
+		sensitive content from being viewed by users that are under the
+		eligible age. Comes with all countries with age limits included,
+		the user simply selects their country and the age limit is
+		automatically set. Add this age gateway to any post or page using
+		the shortcode [age-gateway] and restrict which pages it should
+		appear on.</span></p>	    
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my &#100;&#101;&#115;&#119;&#100;&#101;&#115;&#105;&#103;&#110;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;. Thanks so much!</p>
+   </div> <!-- intro -->
+   
+	</div>
+  <section id="wordpress_plugin">
+	<div class="page-header">
+	<h2 class="western"><span >Wordpress
+	Plugin</span></h2>
+	<hr/>
+
+	<h2 class="western"><span >Welcome
+	to Age-Gateway</span></h2>
+	<p><span >For
+	a quick start install the plugin in your wordpress website and
+	Activate it. This will install and make all the default
+	configurations. Once the plugin has been installed and activated, a
+	menu will be created called <strong>Age-Gateway</strong>. This is where you will find all the
+	configurations you need to manage your age gateway, provide the
+	following information accordingly or as you see fit.</span></p>
+	<h3 class="western"><span >Age
+	Limit</span></h3>
+	<p><span >This
+	if the default age limit the gateway will use regardless of whether
+	the user selects a country or not. Leave this field blank if you
+	want the user to have the flexibility of using their country’s
+	mandatory age limit.</span></p>
+	<h3 class="western"><span >Title
+	– <span style="font-weight: normal"><font size="3" style="font-size: 12pt">this
+	will appear as the title at the top most of the gateway, better if
+	its short.</span></span></font></h3>
+	<h3 class="western"><span >Sub
+	Title – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	will appear just below the title </span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">and
+	is more of a request from the user to provide their birth details so
+	as to proceed</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">.
+	</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i.e.
+	</span></font><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">You
+	must be of the right age to view this page, please enter your birth
+	day details below to proceed.</span></i></font></span></h3>
+	<h3 class="western"><span >Terms
+	and Conditions URL – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	is the URL linking to your site terms and conditions page</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">.
+	</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i.e.
+	</span></font><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">http://www.yoursite.com/terms-conditions</span></i></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">
+	</span></font></span>
+	</h3>
+	<h3 class="western"><span >Privacy Policy URL – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	is the URL linking to your site privacy policy page</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">.
+	</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i.e.
+	</span></font><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">http://www.yoursite.com/privacy-policy</span></i></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">
+	</span></font></span>
+	</h3>
+	<h3 class="western"><span >Redirect URL – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	is the URL linking to the site or page you want the user to be shown.</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">.
+	</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i.e.
+	</span></font><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">http://www.yoursite.com/to-page</span></i></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">
+	</span></font></span>
+	</h3>
+	<h3 class="western"><span >Load for only these pages – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	is where you enter the posts or pages you want the age gateway to be displayed. When left blank the age gateway will appear on only those posts or pages where the shortcode has been added. Add the page slug with coma (,) seperating the pages</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">.
+	</span></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i.e.
+	</span></font><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">page-one, page-two</span></i></font><font size="3" style="font-size: 12pt"><span style="font-weight: normal">
+	</span></font></span>
+	</h3>
+	<h3 class="western"><span >Remember me for – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	will specify how many days an eligible user who has successfully accessed the post or page will be remembered. It will only be effective if the user selects the option to be remembered. If the user doesn't select this option, the age gateway will be displayed every time they try to access this post or page. Leave this field blank to use the default which is 1 day. </span></font>
+	</h3>
+	<h3 class="western"><span >Theme Style – <font size="3" style="font-size: 12pt"><span style="font-weight: normal">this
+	will change the layout and appearance of the age gateway depending on what you have selected. The default theme is white but you can change to the dark theme at any time.</span></font>
+	</h3>
+	<p><img src="assets/img/03_preview.jpg" /></p>
+	<h3 class="western"><span >Add
+	to Post or Page</span></h3>
+	<p><span >You
+	can add the shortcode to any page or post using <strong>Add
+	Age-Gateway Button</strong> by
+	opening the page in edit mode, click the <strong>Add </strong><strong>Age-Gateway</strong><strong>
+	Button</strong> a shortcode similar to the one below will be added
+	to your post or page. Make sure to update the changes in order for
+	the age gateway form to be displayed on the post or page for users.</span></p>
+	<pre class="western" style="margin-bottom: 0.2in"><span >[age-gateway]</span></pre><p>
+	<p><img src="assets/img/add-to-post.jpg" /></p>
+	</section>
+	<section id="html_structure">
+	<h3 class="western"><span >HTML
+	Structure</span></h3>
+	<hr/>
+
+	<h2 class="western"><span >IDs
+	and Classes</span></h2>
+	<p><span >The
+	form template structured can be inserted any where in your html
+	code. However for the purposes of illustration this form is wrapped
+	in the div with id <strong>age-gate-way-overlay</strong>. The div
+	with class <strong>age_gate_way</strong> is used to define the size
+	and position of the form.</span></p>
+	<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+	&lt;div class="age-gate-way-overlay age-gate-way-none"&gt 
+    &lt;div id="age_gate_way" style="display: block; opacity: 1; visibility: visible; top: 10px;"&gt
+        &lt;div class="border_wrap"&gt
+            &lt;form name="age_gateway" method="post"&gt
+                &lt;div class="age-gate-way-form"&gt
+                    &lt;input name="post_type" class="post-type" type="hidden" value="Email" /&gt
+                    &lt;!-- BEGIN FORM SECTIONS --&gt
+                    &lt;div class="age-gate-way-form-section" section="Age GateWay"&gt
+                        &lt;h2&gt%1$s&lt;/h2&gt
+                        &lt;h4&gt%2$s&lt;/h4&gt
+                        &lt;div id="age-gate-way-err"&gt&lt;/div&gt
+                    &lt;/div&gt
+                    &lt;div class="age-gate-way-form-section" section="Age Selection"&gt
+                        &lt;div class="age-gate-way-option"&gt
+                            &lt;div class="age-gate-way-holder"&gt
+                                &lt;select name="day" id="dd" placeholder="Day" data="required"&gt
+                                    &lt;option value=""&gtDay&lt;/option&gt
+                                    &lt;option value="01"&gt01&lt;/option&gt
+                                    &lt;option value="02"&gt02&lt;/option&gt
+                                    &lt;option value="03"&gt03&lt;/option&gt
+                                    &lt;option value="04"&gt04&lt;/option&gt
+                                    &lt;option value="05"&gt05&lt;/option&gt
+                                    &lt;option value="06"&gt06&lt;/option&gt
+                                    &lt;option value="07"&gt07&lt;/option&gt
+                                    &lt;option value="08"&gt08&lt;/option&gt
+                                    &lt;option value="09"&gt09&lt;/option&gt
+                                    &lt;option value="10"&gt10&lt;/option&gt
+                                    &lt;option value="11"&gt11&lt;/option&gt
+                                    &lt;option value="12"&gt12&lt;/option&gt
+                                    &lt;option value="13"&gt13&lt;/option&gt
+                                    &lt;option value="14"&gt14&lt;/option&gt
+                                    &lt;option value="15"&gt15&lt;/option&gt
+                                    &lt;option value="16"&gt16&lt;/option&gt
+                                    &lt;option value="17"&gt17&lt;/option&gt
+                                    &lt;option value="18"&gt18&lt;/option&gt
+                                    &lt;option value="19"&gt19&lt;/option&gt
+                                    &lt;option value="20"&gt20&lt;/option&gt
+                                    &lt;option value="21"&gt21&lt;/option&gt
+                                    &lt;option value="22"&gt22&lt;/option&gt
+                                    &lt;option value="23"&gt23&lt;/option&gt
+                                    &lt;option value="24"&gt24&lt;/option&gt
+                                    &lt;option value="25"&gt25&lt;/option&gt
+                                    &lt;option value="26"&gt26&lt;/option&gt
+                                    &lt;option value="27"&gt27&lt;/option&gt
+                                    &lt;option value="28"&gt28&lt;/option&gt
+                                    &lt;option value="29"&gt29&lt;/option&gt
+                                    &lt;option value="30"&gt30&lt;/option&gt
+                                    &lt;option value="31"&gt31&lt;/option&gt
+                                &lt;/select&gt
+                            &lt;/div&gt
+                        &lt;/div&gt
+                        &lt;div class="age-gate-way-option"&gt
+                            &lt;div class="age-gate-way-holder"&gt
+                                &lt;select name="day" id="mm" placeholder="Month" data="required"&gt
+                                    &lt;option value=""&gtMonth&lt;/option&gt
+                                    &lt;option value="01"&gtJanuary&lt;/option&gt
+                                    &lt;option value="02"&gtFebruary&lt;/option&gt
+                                    &lt;option value="03"&gtMarch&lt;/option&gt
+                                    &lt;option value="04"&gtApril&lt;/option&gt
+                                    &lt;option value="05"&gtMay&lt;/option&gt
+                                    &lt;option value="06"&gtJune&lt;/option&gt
+                                    &lt;option value="07"&gtJuly&lt;/option&gt
+                                    &lt;option value="08"&gtAugust&lt;/option&gt
+                                    &lt;option value="09"&gtSeptember&lt;/option&gt
+                                    &lt;option value="10"&gtOctober&lt;/option&gt
+                                    &lt;option value="11"&gtNovember&lt;/option&gt
+                                    &lt;option value="12"&gtDecember&lt;/option&gt
+
+                                &lt;/select&gt
+                            &lt;/div&gt
+                        &lt;/div&gt
+                        &lt;div class="age-gate-way-option"&gt
+                            &lt;div class="age-gate-way-holder"&gt
+                                &lt;select name="day" id="yyyy" placeholder="Year" data="required"&gt
+                                    &lt;option value=""&gtYear&lt;/option&gt
+                                    &lt;option value="2014"&gt2014&lt;/option&gt
+                                    &lt;option value="2013"&gt2013&lt;/option&gt
+                                    &lt;option value="2012"&gt2012&lt;/option&gt
+                                    &lt;option value="2011"&gt2011&lt;/option&gt
+                                    &lt;option value="2010"&gt2010&lt;/option&gt
+                                    &lt;option value="2009"&gt2009&lt;/option&gt
+                                    &lt;option value="2008"&gt2008&lt;/option&gt
+                                    &lt;option value="2007"&gt2007&lt;/option&gt
+                                    &lt;option value="2006"&gt2006&lt;/option&gt
+                                    &lt;option value="2005"&gt2005&lt;/option&gt
+                                    &lt;option value="2004"&gt2004&lt;/option&gt
+                                    &lt;option value="2003"&gt2003&lt;/option&gt
+                                    &lt;option value="2002"&gt2002&lt;/option&gt
+                                    &lt;option value="2001"&gt2001&lt;/option&gt
+                                    &lt;option value="2000"&gt2000&lt;/option&gt
+                                    &lt;option value="1999"&gt1999&lt;/option&gt
+                                    &lt;option value="1998"&gt1998&lt;/option&gt
+                                    &lt;option value="1997"&gt1997&lt;/option&gt
+                                    &lt;option value="1996"&gt1996&lt;/option&gt
+                                    &lt;option value="1995"&gt1995&lt;/option&gt
+                                    &lt;option value="1994"&gt1994&lt;/option&gt
+                                    &lt;option value="1993"&gt1993&lt;/option&gt
+                                    &lt;option value="1992"&gt1992&lt;/option&gt
+                                    &lt;option value="1991"&gt1991&lt;/option&gt
+                                    &lt;option value="1990"&gt1990&lt;/option&gt
+                                    &lt;option value="1989"&gt1989&lt;/option&gt
+                                    &lt;option value="1988"&gt1988&lt;/option&gt
+                                    &lt;option value="1987"&gt1987&lt;/option&gt
+                                    &lt;option value="1986"&gt1986&lt;/option&gt
+                                    &lt;option value="1985"&gt1985&lt;/option&gt
+                                    &lt;option value="1984"&gt1984&lt;/option&gt
+                                    &lt;option value="1983"&gt1983&lt;/option&gt
+                                    &lt;option value="1982"&gt1982&lt;/option&gt
+                                    &lt;option value="1981"&gt1981&lt;/option&gt
+                                    &lt;option value="1980"&gt1980&lt;/option&gt
+                                    &lt;option value="1979"&gt1979&lt;/option&gt
+                                    &lt;option value="1978"&gt1978&lt;/option&gt
+                                    &lt;option value="1977"&gt1977&lt;/option&gt
+                                    &lt;option value="1976"&gt1976&lt;/option&gt
+                                    &lt;option value="1975"&gt1975&lt;/option&gt
+                                    &lt;option value="1974"&gt1974&lt;/option&gt
+                                    &lt;option value="1973"&gt1973&lt;/option&gt
+                                    &lt;option value="1972"&gt1972&lt;/option&gt
+                                    &lt;option value="1971"&gt1971&lt;/option&gt
+                                    &lt;option value="1970"&gt1970&lt;/option&gt
+                                    &lt;option value="1969"&gt1969&lt;/option&gt
+                                    &lt;option value="1968"&gt1968&lt;/option&gt
+                                    &lt;option value="1966"&gt1966&lt;/option&gt
+                                    &lt;option value="1965"&gt1965&lt;/option&gt
+                                    &lt;option value="1964"&gt1964&lt;/option&gt
+                                    &lt;option value="1963"&gt1963&lt;/option&gt
+                                    &lt;option value="1962"&gt1962&lt;/option&gt
+                                    &lt;option value="1961"&gt1961&lt;/option&gt
+                                    &lt;option value="1960"&gt1960&lt;/option&gt
+                                    &lt;option value="1959"&gt1959&lt;/option&gt
+                                    &lt;option value="1958"&gt1958&lt;/option&gt
+                                    &lt;option value="1957"&gt1957&lt;/option&gt
+                                    &lt;option value="1956"&gt1956&lt;/option&gt
+                                    &lt;option value="1955"&gt1955&lt;/option&gt
+                                    &lt;option value="1954"&gt1954&lt;/option&gt
+                                    &lt;option value="1953"&gt1953&lt;/option&gt
+                                    &lt;option value="1952"&gt1952&lt;/option&gt
+                                    &lt;option value="1951"&gt1951&lt;/option&gt
+                                    &lt;option value="1950"&gt1950&lt;/option&gt
+                                    &lt;option value="1949"&gt1949&lt;/option&gt
+                                    &lt;option value="1948"&gt1948&lt;/option&gt
+                                    &lt;option value="1947"&gt1947&lt;/option&gt
+                                    &lt;option value="1946"&gt1946&lt;/option&gt
+                                    &lt;option value="1945"&gt1945&lt;/option&gt
+                                    &lt;option value="1944"&gt1944&lt;/option&gt
+                                    &lt;option value="1943"&gt1943&lt;/option&gt
+                                    &lt;option value="1942"&gt1942&lt;/option&gt
+                                    &lt;option value="1941"&gt1941&lt;/option&gt
+                                    &lt;option value="1940"&gt1940&lt;/option&gt
+                                    &lt;option value="1939"&gt1939&lt;/option&gt
+                                    &lt;option value="1938"&gt1938&lt;/option&gt
+                                    &lt;option value="1937"&gt1937&lt;/option&gt
+                                    &lt;option value="1936"&gt1936&lt;/option&gt
+                                    &lt;option value="1935"&gt1935&lt;/option&gt
+                                    &lt;option value="1934"&gt1934&lt;/option&gt
+                                    &lt;option value="1933"&gt1933&lt;/option&gt
+                                    &lt;option value="1932"&gt1932&lt;/option&gt
+                                    &lt;option value="1931"&gt1931&lt;/option&gt
+                                    &lt;option value="1930"&gt1930&lt;/option&gt
+                                    &lt;option value="1929"&gt1929&lt;/option&gt
+                                    &lt;option value="1928"&gt1928&lt;/option&gt
+                                    &lt;option value="1927"&gt1927&lt;/option&gt
+                                    &lt;option value="1926"&gt1926&lt;/option&gt
+                                    &lt;option value="1925"&gt1925&lt;/option&gt
+                                    &lt;option value="1924"&gt1924&lt;/option&gt
+                                    &lt;option value="1923"&gt1923&lt;/option&gt
+                                    &lt;option value="1922"&gt1922&lt;/option&gt
+                                    &lt;option value="1921"&gt1921&lt;/option&gt
+                                    &lt;option value="1920"&gt1920&lt;/option&gt
+
+                                &lt;/select&gt
+                            &lt;/div&gt
+                        &lt;/div&gt
+                    &lt;/div&gt
+                    &lt;div class="age-gate-way-form-clear"&gt&lt;/div&gt
+                    &lt;div class="age-gate-way-form-section" section="Country Selection"&gt
+                        &lt;div class="age-gate-way-holder"&gt
+                            &lt;select name="country" id="country" placeholder="Country" data="required"&gt
+                                &lt;option value="AX"&gtÅland Islands&lt;/option&gt
+                                &lt;option value="AF"&gtAfghanistan&lt;/option&gt
+                                &lt;option value="AL"&gtAlbania&lt;/option&gt
+                                &lt;option value="DZ"&gtAlgeria&lt;/option&gt
+                                &lt;option value="AS"&gtAmerican Samoa&lt;/option&gt
+                                &lt;option value="AD"&gtAndorra&lt;/option&gt
+                                &lt;option value="AO"&gtAngola&lt;/option&gt
+                                &lt;option value="AI"&gtAnguilla&lt;/option&gt
+                                &lt;option value="AQ"&gtAntarctica&lt;/option&gt
+                                &lt;option value="AG"&gtAntigua And Barbuda&lt;/option&gt
+                                &lt;option value="AR"&gtArgentina&lt;/option&gt
+                                &lt;option value="AM"&gtArmenia&lt;/option&gt
+                                &lt;option value="AW"&gtAruba&lt;/option&gt
+                                &lt;option value="AU"&gtAustralia&lt;/option&gt
+                                &lt;option value="AT"&gtAustria&lt;/option&gt
+                                &lt;option value="AZ"&gtAzerbaijan&lt;/option&gt
+                                &lt;option value="BS"&gtBahamas&lt;/option&gt
+                                &lt;option value="BH"&gtBahrain&lt;/option&gt
+                                &lt;option value="BD"&gtBangladesh&lt;/option&gt
+                                &lt;option value="BB"&gtBarbados&lt;/option&gt
+                                &lt;option value="BY"&gtBelarus&lt;/option&gt
+                                &lt;option value="BE"&gtBelgium&lt;/option&gt
+                                &lt;option value="BZ"&gtBelize&lt;/option&gt
+                                &lt;option value="BJ"&gtBenin&lt;/option&gt
+                                &lt;option value="BM"&gtBermuda&lt;/option&gt
+                                &lt;option value="BT"&gtBhutan&lt;/option&gt
+                                &lt;option value="BO"&gtBolivia&lt;/option&gt
+                                &lt;option value="BQ"&gtBonaire, Sint Eustatius and Saba&lt;/option&gt
+                                &lt;option value="BA"&gtBosnia And Herzegovina&lt;/option&gt
+                                &lt;option value="BW"&gtBotswana&lt;/option&gt
+                                &lt;option value="BR"&gtBrazil&lt;/option&gt
+                                &lt;option value="BN"&gtBrunei&lt;/option&gt
+                                &lt;option value="BG"&gtBulgaria&lt;/option&gt
+                                &lt;option value="BF"&gtBurkina Faso&lt;/option&gt
+                                &lt;option value="BI"&gtBurundi&lt;/option&gt
+                                &lt;option value="KH"&gtCambodia&lt;/option&gt
+                                &lt;option value="CM"&gtCameroon&lt;/option&gt
+                                &lt;option value="CA"&gtCanada&lt;/option&gt
+                                &lt;option value="CV"&gtCape Verde&lt;/option&gt
+                                &lt;option value="KY"&gtCayman Islands&lt;/option&gt
+                                &lt;option value="CF"&gtCentral Africa&lt;/option&gt
+                                &lt;option value="TD"&gtChad&lt;/option&gt
+                                &lt;option value="CL"&gtChile&lt;/option&gt
+                                &lt;option value="CN"&gtChina&lt;/option&gt
+                                &lt;option value="HK"&gtChina (Hong Kong)&lt;/option&gt
+                                &lt;option value="CX"&gtChristmas Island (Australia)&lt;/option&gt
+                                &lt;option value="CC"&gtCocos (Keeling) Islands (Australia)&lt;/option&gt
+                                &lt;option value="CO"&gtColombia&lt;/option&gt
+                                &lt;option value="KM"&gtComoros&lt;/option&gt
+                                &lt;option value="CD"&gtCongo, Democratic Republic of the&lt;/option&gt
+                                &lt;option value="CG"&gtCongo, Republic of the&lt;/option&gt
+                                &lt;option value="CK"&gtCook Islands&lt;/option&gt
+                                &lt;option value="CR"&gtCosta Rica&lt;/option&gt
+                                &lt;option value="CI"&gtCote D\'ivoire&lt;/option&gt
+                                &lt;option value="HR"&gtCroatia&lt;/option&gt
+                                &lt;option value="CU"&gtCuba&lt;/option&gt
+                                &lt;option value="CW"&gtCuraçao&lt;/option&gt
+                                &lt;option value="CY"&gtCyprus&lt;/option&gt
+                                &lt;option value="CZ"&gtCzech Republic&lt;/option&gt
+                                &lt;option value="DK"&gtDenmark&lt;/option&gt
+                                &lt;option value="DJ"&gtDjibouti&lt;/option&gt
+                                &lt;option value="DM"&gtDominica&lt;/option&gt
+                                &lt;option value="DO"&gtDominican Republic&lt;/option&gt
+                                &lt;option value="EC"&gtEcuador&lt;/option&gt
+                                &lt;option value="EG"&gtEgypt&lt;/option&gt
+                                &lt;option value="SV"&gtEl Salvador&lt;/option&gt
+                                &lt;option value="GQ"&gtEquatorial Guinea&lt;/option&gt
+                                &lt;option value="ER"&gtEritrea&lt;/option&gt
+                                &lt;option value="EE"&gtEstonia&lt;/option&gt
+                                &lt;option value="ET"&gtEthiopia&lt;/option&gt
+                                &lt;option value="FK"&gtFalkland Islands&lt;/option&gt
+                                &lt;option value="FO"&gtFaroe Islands&lt;/option&gt
+                                &lt;option value="FJ"&gtFiji&lt;/option&gt
+                                &lt;option value="FI"&gtFinland&lt;/option&gt
+                                &lt;option value="FR"&gtFrance&lt;/option&gt
+                                &lt;option value="GF"&gtFrench Guiana&lt;/option&gt
+                                &lt;option value="PF"&gtFrench Polynesia&lt;/option&gt
+                                &lt;option value="TF"&gtFrench Southern Territories&lt;/option&gt
+                                &lt;option value="GA"&gtGabon&lt;/option&gt
+                                &lt;option value="GE"&gtGeorgia&lt;/option&gt
+                                &lt;option value="DE"&gtGermany&lt;/option&gt
+                                &lt;option value="GH"&gtGhana&lt;/option&gt
+                                &lt;option value="GI"&gtGibraltar (UK)&lt;/option&gt
+                                &lt;option value="GR"&gtGreece&lt;/option&gt
+                                &lt;option value="GL"&gtGreenland&lt;/option&gt
+                                &lt;option value="GD"&gtGrenada&lt;/option&gt
+                                &lt;option value="GP"&gtGuadaloupe (France)&lt;/option&gt
+                                &lt;option value="GU"&gtGuam&lt;/option&gt
+                                &lt;option value="GT"&gtGuatemala&lt;/option&gt
+                                &lt;option value="GG"&gtGuernsey&lt;/option&gt
+                                &lt;option value="GN"&gtGuinea&lt;/option&gt
+                                &lt;option value="GW"&gtGuinea-Bissau&lt;/option&gt
+                                &lt;option value="GY"&gtGuyana&lt;/option&gt
+                                &lt;option value="HT"&gtHaiti&lt;/option&gt
+                                &lt;option value="HM"&gtHeard Island &amp; McDonald Islands&lt;/option&gt
+                                &lt;option value="VA"&gtHoly See (Vatican City State)&lt;/option&gt
+                                &lt;option value="HN"&gtHonduras&lt;/option&gt
+                                &lt;option value="HU"&gtHungary&lt;/option&gt
+                                &lt;option value="IS"&gtIceland&lt;/option&gt
+                                &lt;option value="IN"&gtIndia&lt;/option&gt
+                                &lt;option value="IO"&gtIndian Ocean Territory (UK)&lt;/option&gt
+                                &lt;option value="ID"&gtIndonesia&lt;/option&gt
+                                &lt;option value="IR"&gtIran&lt;/option&gt
+                                &lt;option value="IQ"&gtIraq&lt;/option&gt
+                                &lt;option value="IE"&gtIreland&lt;/option&gt
+                                &lt;option value="IM"&gtIsle Of Man&lt;/option&gt
+                                &lt;option value="IL"&gtIsrael&lt;/option&gt
+                                &lt;option value="IT"&gtItaly&lt;/option&gt
+                                &lt;option value="JM"&gtJamaica&lt;/option&gt
+                                &lt;option value="JP"&gtJapan&lt;/option&gt
+                                &lt;option value="JE"&gtJersey&lt;/option&gt
+                                &lt;option value="JO"&gtJordan&lt;/option&gt
+                                &lt;option value="KZ"&gtKazakhstan&lt;/option&gt
+                                &lt;option value="KE"&gtKenya&lt;/option&gt
+                                &lt;option value="KI"&gtKiribati&lt;/option&gt
+                                &lt;option value="KP"&gtKorea, Democratic People\'s Republic of&lt;/option&gt
+                                &lt;option value="KR"&gtKorea, Republic of&lt;/option&gt
+                                &lt;option value="KW"&gtKuwait&lt;/option&gt
+                                &lt;option value="KG"&gtKyrgyzstan&lt;/option&gt
+                                &lt;option value="LA"&gtLao People\'s Democratic Republic&lt;/option&gt
+                                &lt;option value="LV"&gtLatvia&lt;/option&gt
+                                &lt;option value="LB"&gtLebanon&lt;/option&gt
+                                &lt;option value="LS"&gtLesotho&lt;/option&gt
+                                &lt;option value="LR"&gtLiberia&lt;/option&gt
+                                &lt;option value="LY"&gtLibya&lt;/option&gt
+                                &lt;option value="LI"&gtLiechtenstein&lt;/option&gt
+                                &lt;option value="LT"&gtLithuania&lt;/option&gt
+                                &lt;option value="LU"&gtLuxembourg&lt;/option&gt
+                                &lt;option value="MO"&gtMacao&lt;/option&gt
+                                &lt;option value="MK"&gtMacedonia&lt;/option&gt
+                                &lt;option value="MG"&gtMadagascar&lt;/option&gt
+                                &lt;option value="MW"&gtMalawi&lt;/option&gt
+                                &lt;option value="MY"&gtMalaysia&lt;/option&gt
+                                &lt;option value="MV"&gtMaldives&lt;/option&gt
+                                &lt;option value="ML"&gtMali&lt;/option&gt
+                                &lt;option value="MT"&gtMalta&lt;/option&gt
+                                &lt;option value="MH"&gtMarshall Islands&lt;/option&gt
+                                &lt;option value="MQ"&gtMartinique (France)&lt;/option&gt
+                                &lt;option value="MR"&gtMauritania&lt;/option&gt
+                                &lt;option value="MU"&gtMauritius&lt;/option&gt
+                                &lt;option value="YT"&gtMayotte (France)&lt;/option&gt
+                                &lt;option value="MX"&gtMexico&lt;/option&gt
+                                &lt;option value="FM"&gtMicronesia&lt;/option&gt
+                                &lt;option value="MD"&gtMoldova&lt;/option&gt
+                                &lt;option value="MC"&gtMonaco&lt;/option&gt
+                                &lt;option value="MN"&gtMongolia&lt;/option&gt
+                                &lt;option value="ME"&gtMontenegro&lt;/option&gt
+                                &lt;option value="MS"&gtMontserrat&lt;/option&gt
+                                &lt;option value="MA"&gtMorocco&lt;/option&gt
+                                &lt;option value="MZ"&gtMozambique&lt;/option&gt
+                                &lt;option value="MM"&gtMyanmar&lt;/option&gt
+                                &lt;option value="NA"&gtNamibia&lt;/option&gt
+                                &lt;option value="NR"&gtNauru&lt;/option&gt
+                                &lt;option value="NP"&gtNepal&lt;/option&gt
+                                &lt;option value="NL"&gtNetherlands&lt;/option&gt
+                                &lt;option value="NC"&gtNew Caledonia&lt;/option&gt
+                                &lt;option value="NZ"&gtNew Zealand&lt;/option&gt
+                                &lt;option value="NI"&gtNicaragua&lt;/option&gt
+                                &lt;option value="NE"&gtNiger&lt;/option&gt
+                                &lt;option value="NG"&gtNigeria&lt;/option&gt
+                                &lt;option value="NU"&gtNiue&lt;/option&gt
+                                &lt;option value="NF"&gtNorfolk Island (Australia)&lt;/option&gt
+                                &lt;option value="MP"&gtNorthern Mariana Islands&lt;/option&gt
+                                &lt;option value="NO"&gtNorway&lt;/option&gt
+                                &lt;option value="OM"&gtOman&lt;/option&gt
+                                &lt;option value="PK"&gtPakistan&lt;/option&gt
+                                &lt;option value="PW"&gtPalau&lt;/option&gt
+                                &lt;option value="PS"&gtPalestine, State of&lt;/option&gt
+                                &lt;option value="PA"&gtPanama&lt;/option&gt
+                                &lt;option value="PG"&gtPapua New Guinea&lt;/option&gt
+                                &lt;option value="PY"&gtParaguay&lt;/option&gt
+                                &lt;option value="PE"&gtPeru&lt;/option&gt
+                                &lt;option value="PH"&gtPhilippines&lt;/option&gt
+                                &lt;option value="PN"&gtPitcairn Islands&lt;/option&gt
+                                &lt;option value="PL"&gtPoland&lt;/option&gt
+                                &lt;option value="PT"&gtPortugal&lt;/option&gt
+                                &lt;option value="PR"&gtPuerto Rico&lt;/option&gt
+                                &lt;option value="QA"&gtQatar&lt;/option&gt
+                                &lt;option value="RE"&gtReunion&lt;/option&gt
+                                &lt;option value="RO"&gtRomania&lt;/option&gt
+                                &lt;option value="RU"&gtRussian Federation&lt;/option&gt
+                                &lt;option value="RW"&gtRwanda&lt;/option&gt
+                                &lt;option value="BL"&gtSaint Barthélemy&lt;/option&gt
+                                &lt;option value="SH"&gtSaint Helena (UK)&lt;/option&gt
+                                &lt;option value="KN"&gtSaint Kitts And Nevis&lt;/option&gt
+                                &lt;option value="LC"&gtSaint Lucia&lt;/option&gt
+                                &lt;option value="MF"&gtSaint Martin (French Part)&lt;/option&gt
+                                &lt;option value="VC"&gtSaint Vincent And The Grenadines&lt;/option&gt
+                                &lt;option value="PM"&gtSaint-Pierre Et Miquelon&lt;/option&gt
+                                &lt;option value="WS"&gtSamoa&lt;/option&gt
+                                &lt;option value="SM"&gtSan Marino&lt;/option&gt
+                                &lt;option value="ST"&gtSao Tome and Principe&lt;/option&gt
+                                &lt;option value="SA"&gtSaudi Arabia&lt;/option&gt
+                                &lt;option value="SN"&gtSenegal&lt;/option&gt
+                                &lt;option value="RS"&gtSerbia, Republic of&lt;/option&gt
+                                &lt;option value="SC"&gtSeychelles&lt;/option&gt
+                                &lt;option value="SL"&gtSierra Leone&lt;/option&gt
+                                &lt;option value="SG"&gtSingapore&lt;/option&gt
+                                &lt;option value="SX"&gtSint Maarten (Dutch Part)&lt;/option&gt
+                                &lt;option value="SK"&gtSlovakia&lt;/option&gt
+                                &lt;option value="SI"&gtSlovenia&lt;/option&gt
+                                &lt;option value="SB"&gtSolomon Islands&lt;/option&gt
+                                &lt;option value="SO"&gtSomalia&lt;/option&gt
+                                &lt;option value="ZA"&gtSouth Africa&lt;/option&gt
+                                &lt;option value="GS"&gtSouth Georgia &amp; S. Sandwich Islands&lt;/option&gt
+                                &lt;option value="SS"&gtSouth Sudan&lt;/option&gt
+                                &lt;option value="ES"&gtSpain&lt;/option&gt
+                                &lt;option value="LK"&gtSri Lanka&lt;/option&gt
+                                &lt;option value="SD"&gtSudan&lt;/option&gt
+                                &lt;option value="SR"&gtSuriname&lt;/option&gt
+                                &lt;option value="SJ"&gtSvalbard and Jan Mayen&lt;/option&gt
+                                &lt;option value="SZ"&gtSwaziland&lt;/option&gt
+                                &lt;option value="SE"&gtSweden&lt;/option&gt
+                                &lt;option value="CH"&gtSwitzerland&lt;/option&gt
+                                &lt;option value="SY"&gtSyria&lt;/option&gt
+                                &lt;option value="TW"&gtTaiwan (China)&lt;/option&gt
+                                &lt;option value="TJ"&gtTajikistan&lt;/option&gt
+                                &lt;option value="TZ"&gtTanzania, United Republic of&lt;/option&gt
+                                &lt;option value="TH"&gtThailand&lt;/option&gt
+                                &lt;option value="GM"&gtThe Gambia&lt;/option&gt
+                                &lt;option value="TL"&gtTimor-Leste&lt;/option&gt
+                                &lt;option value="TG"&gtTogo&lt;/option&gt
+                                &lt;option value="TK"&gtTokelau (New Zealand)&lt;/option&gt
+                                &lt;option value="TO"&gtTonga&lt;/option&gt
+                                &lt;option value="TT"&gtTrinidad And Tobago&lt;/option&gt
+                                &lt;option value="TN"&gtTunisia&lt;/option&gt
+                                &lt;option value="TR"&gtTurkey&lt;/option&gt
+                                &lt;option value="TM"&gtTurkmenistan&lt;/option&gt
+                                &lt;option value="TC"&gtTurks And Caicos Islands&lt;/option&gt
+                                &lt;option value="TV"&gtTuvalu&lt;/option&gt
+                                &lt;option value="UG" selected=""&gtUganda&lt;/option&gt
+                                &lt;option value="UA"&gtUkraine&lt;/option&gt
+                                &lt;option value="AE"&gtUnited Arab Emirates&lt;/option&gt
+                                &lt;option value="GB"&gtUnited Kingdom&lt;/option&gt
+                                &lt;option value="US"&gtUnited States&lt;/option&gt
+                                &lt;option value="UM"&gtUnited States Minor Outlying Islands&lt;/option&gt
+                                &lt;option value="UY"&gtUruguay&lt;/option&gt
+                                &lt;option value="UZ"&gtUzbekistan&lt;/option&gt
+                                &lt;option value="VU"&gtVanuatu&lt;/option&gt
+                                &lt;option value="VE"&gtVenezuela&lt;/option&gt
+                                &lt;option value="VN"&gtVietnam&lt;/option&gt
+                                &lt;option value="VG"&gtVirgin Islands (UK)&lt;/option&gt
+                                &lt;option value="VI"&gtVirgin Islands (USA)&lt;/option&gt
+                                &lt;option value="WF"&gtWallis and Futuna&lt;/option&gt
+                                &lt;option value="EH"&gtWestern Sahara&lt;/option&gt
+                                &lt;option value="YE"&gtYemen&lt;/option&gt
+                                &lt;option value="ZM"&gtZambia&lt;/option&gt
+                                &lt;option value="ZW"&gtZimbabwe&lt;/option&gt
+                            &lt;/select&gt
+                        &lt;/div&gt
+                    &lt;/div&gt
+                    &lt;div class="age-gate-way-form-section" &gt
+                        &lt;p&gtBy entering this site you agree to our &lt;a href="%3$s"&gtTerms &amp; Conditions&lt;/a&gt | 
+                            &lt;a href="%4$s"&gtPrivacy &amp; Cookies Notice&lt;/a&gt&lt;/p&gt
+                        &lt;p&gt&lt;input type="checkbox" id="remember" value="1" placeholder="Remember Me" data="" /&gt Use a cookie to remember me. Only check this if you are not using a shared computer.&lt;/p&gt
+                    &lt;/div&gt
+                    &lt;!-- BEGIN FINAL SECTION --&gt            
+                    &lt;div class="age-gate-way-form-section age-gate-way-final" section=""&gt
+                        &lt;div class="age-gate-way-form-button"&gt
+                            &lt;button class="age-gate-way-submit-data"&gt%5$s&lt;/button&gt
+                        &lt;/div&gt
+                    &lt;/div&gt
+                    &lt;!-- END FINAL SECTION --&gt
+                &lt;/div&gt
+            &lt;/form&gt
+        &lt;/div&gt
+    &lt;/div&gt
+&lt;/div&gt
+</pre>
+	</section>
+<section id="css_files_and_structure">
+	<div class="page-header"><h3>CSS Files and Structure</h3><hr class="notop"></div>
+
+	<p><span >There
+	are six CSS files included in the package. The style.css file
+	contains the white theme which is the default theme, and the dark
+	theme;</span></p>
+	<p><span >-
+	style.css</span></p>
+	<p><span >-
+	dark.css</span></p>
+	<p><span >The
+	style codes included in the diferent files are based on CSS3/HTML5
+	formating. If you would like to edit a specific section of the site,
+	simply find the appropriate label in the CSS file, and then scroll
+	down until you find the appropriate style that needs to be edited.</span></p>
+	<pre class="western">/* CSS Document */
+
+.age_gate_way_wrap {
+    background: #efefef;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#age_gate_way {
+    float:none;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    width: 40%;
+    padding: 1%;
+    box-shadow: 0 0 25px -5px #888888;
+    border-radius: 10px ;
+}
+
+.age-gate-way-form h2{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.age-gate-way-form a{
+    color:#236BB3;
+    text-decoration:none!important;
+}
+
+.age-gate-way-form a:hover{
+    color:#236BB3;
+    text-decoration:none!important;
+}
+
+.age-gate-way-message {
+  font-size: 1.25em;
+  animation: fadeIn;
+}
+
+@media only screen and (max-width:45em){
+  #age_gate_way { 
+    width: 100%;
+  }
+}
+
+.age-gate-way-overlay {  
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}
+
+.age-gate-way-clear{
+	clear:both;
+}
+
+#age-gate-way-err{
+	color:red;	
+}
+
+.age-gate-way-option{
+	width:33%;
+	float:left;
+    padding:2% 0;
+}
+
+.age-gate-way-form-section{
+	padding:1%;
+}
+
+
+/* gateway form */
+
+.age-gate-way-form input[type=text],
+.age-gate-way-form input[type=password], 
+.age-gate-way-form input[type=email], 
+.age-gate-way-form select,
+.age-gate-way-form textarea{
+	width: 100%;
+    padding: 3px 16px;
+    background-color: transparent;
+    border: 3px solid rgba(255,255,255,0.2);
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    border:1px solid #888;
+}
+
+.age-gate-way-form textarea {
+    min-height: 10em;
+}
+
+.age-gate-way-form input, .age-gate-way-form textarea {
+    width: 100%;
+    padding: 3px 16px;
+    background-color: transparent;
+    border: 3px solid rgba(255,255,255,0.2);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.age-gate-way-form input[type=checkbox]{
+    width: 0px;
+}
+
+.age-gate-way-form-section .age-gate-way-form-button{
+	text-align:center;
+}
+
+.age-gate-way-form .age-gate-way-form-button button {
+    background: #7cccf5;
+    border: 3px solid #7cccf5;
+    color: #ffffff;
+    height: 60px;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box !important;
+}
+.age-gate-way-form .age-gate-way-form-button button > span {
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 9999;
+    line-height: 50px;
+}
+.age-gate-way-form-topic .age-gate-way-form-button button {
+    background: transparent;
+    border: 3px solid #7cccf5;
+    color: #7cccf5;
+    height: 55px;
+    line-height: 54px;
+    padding: 0 70px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+.age-gate-way-form .age-gate-way-form-button button:hover,
+.age-gate-way-form .age-gate-way-form-button button:active {
+    background-color: transparent;
+    border-color: #7cccf5;
+    color: #7cccf5;
+}
+
+.age-gate-way-form-section .age-gate-way-submit-data{
+	padding:10px;
+	border:1px solid #ccc;
+	background-color:#0CF;
+	font-weight:bold;
+	cursor:pointer;	
+	width:120px;
+	margin:1% auto;
+}
+
+.age-gate-way-none{display:none;}
+
+
+@import "compass/css3";
+
+@import url(http://fonts.age-gate-way-googleapis.age-gate-way-com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+@import "compass/reset";
+$fontSans : 'Montserrat', sans-serif;
+ 
+
+$red : #e74c3c ;
+$dark :  #3d3d3d;
+$blue: #6dcff6;
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+@keyframes fadeIn {
+  0%   { opacity: 0;  top: -50px;}
+  100% { opacity: 1; top :0;}
+}
+
+
+*{ box-sizing:border-box;}
+
+</pre>
+</section>
+<section id="javascript">
+	<div class="page-header"><h3>Javascript</h3><hr class="notop"></div>
+
+	<p><span >This
+	theme imports three Javascript files.</span></p>
+p style="margin-bottom: 0in"><span >jquery-1.11.0.min.js
+		</span>
+		</p>
+<p><span >age-gatway-form.js
+		</span>
+		</p>
+p><span >jquery-1.11.0.min.js
+		is the jQuery library release I have used to implement the Multi
+		Step Form functions. </span>
+		</p>
+		<pre class="western" style="margin-bottom: 0.2in"><span >&lt;script language=&quot;JavaScript&quot; src=&quot;js/jquery-1.11.0.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span></pre>
+<p><span >age-gateway-form.js
+		contains all functions and effects of the form. The code is
+		implemented by wordpress using the <i>wp_enqueue_script</i>
+		function</span></p>
+		<pre class="prettyprint lang-prettyprint lang-js linenums linenums" style="margin-left: 40px;">wp_enqueue_script('age-gateway-form', $plugin_url  . 'age-gateway-form.js', array('jquery'), '', true);</pre>
+	<p><span >	The
+	form will be instantiated with the following line of jQjuery code </span>
+	</p>
+	<pre class="western" ><span >jQuery(document).ready(function(e){</span>
+<span >	checkCookie();</span>
+<span >});</span></pre><h3 class="western" >
+	<span >&nbsp;</span></h3>
+	</section>
+<section id="validation">
+	<h3 class="western">VALIDATION</h3>
+	<p ><span >The
+	<strong>Validate_Section</strong> that ensures that those input
+	field with a data attribute having a value required are properly
+	validated.</span></p>
+	<pre class="western" ><span > /*</span>
+<span >     * sanitize the user's form details and validate accordingly</span>
+<span >     */</span>
+<span >	function Validate_Section(sectionObject){</span>
+<span >		error = 0;</span>
+<span >		err_msg = '';</span>
+<span >		var placeholder = '';</span>
+<span >		// loop through the input controls in the current section</span>
+<span >		jQuery(sectionObject+' input, '+sectionObject+' select, '+sectionObject+' textarea, '+sectionObject+' input:checkbox').each(</span>
+<span >			function(index){  </span>
+<span >				// create an object of the current input control</span>
+<span >				var input = jQuery(this);</span>
+
+<span >				// set the value of the data attribute</span>
+<span >				data_format = input.attr('data');</span>
+<span >				placeholder = input.attr('placeholder');</span>
+<span >				// set the value of the input</span>
+<span >				val = input.val();</span>
+<span >				</span>
+<span >				var pass1 = document.getElementById('pass1');</span>
+<span >				var pass2 = document.getElementById('pass2');</span>
+<span >				</span>
+<span >				// check for any scripts or tags in string from input</span>
+<span >				// this is checking for any XSS attacks</span>
+<span >				if(IsContainsTags(val)==true){</span>
+<span >					input.addClass('invalid');</span>
+<span >					error++; // increase the error number by 1</span>
+<span >				}else{</span>
+<span >					val = val.replace(/(&lt;([^&gt;]+)&gt;)/ig,&quot;&quot;);</span>
+<span >					// check which data format is the input by checking its 'data' attribute</span>
+<span >					// if normal text validate the data</span>
+<span >					if(data_format == 'required'){</span>
+<span >						if(val=='' || val.length==0 || IsContainsTags(val)==true){</span>
+<span >							input.addClass('invalid');</span>
+<span >							error++; // increase the error number by 1</span>
+<span >							err_msg=err_msg+'Please select a '+ placeholder+'&lt;br /&gt;';</span>
+<span >						}else{</span>
+<span >							input.removeClass('invalid');</span>
+<span >							input.addClass('valid');</span>
+<span >						}</span>
+<span >						if(input.is(&quot;:checkbox&quot;)){</span>
+<span >							if(input.is(&quot;:checked&quot;)){</span>
+<span >								input.removeClass('invalid');</span>
+<span >								input.addClass('valid');</span>
+<span >							}else{</span>
+<span >								input.removeClass('valid');</span>
+<span >								input.addClass('invalid');</span>
+<span >								error++; // increase the error number by 1</span>
+<span >								err_msg=err_msg+'Please check a '+ placeholder+'&lt;br /&gt;';</span>
+<span >							}</span>
+<span >						}</span>
+<span >						if(input.is(&quot;:radio&quot;)){</span>
+<span >							var currentRadioName = &quot;&quot;;</span>
+<span >							var alreadyChecked = false;</span>
+<span >								currentRadioName = input.attr('name');</span>
+<span >							if(input.is(&quot;:checked&quot;)){</span>
+<span >								input.removeClass('invalid');</span>
+<span >								input.addClass('valid');</span>
+<span >							}</span>
+<span >							jQuery(&quot;input[name=&quot; + currentRadioName + &quot;]&quot;).each(function(){</span>
+<span >								if(jQuery(this).is(&quot;:checked&quot;)){</span>
+<span >									alreadyChecked = true;</span>
+<span >								}</span>
+<span >							});</span>
+<span >							if(alreadyChecked == true){</span>
+<span >								input.removeClass('invalid');</span>
+<span >								input.addClass('valid');	</span>
+<span >							}else{</span>
+<span >								input.removeClass('valid');</span>
+<span >								input.addClass('invalid');</span>
+<span >								error++; // increase the error number by 1</span>
+<span >								err_msg=err_msg+'Please select a '+ placeholder+'&lt;br /&gt;';</span>
+<span >							}</span>
+<span >						}</span>
+<span >					}</span>
+<span >					// if email format validate the email</span>
+<span >					if(data_format == 'email'){</span>
+<span >						if(IsEmailValid(val)==false || val=='' || val.length==0 || IsContainsTags(val)==true){</span>
+<span >							input.addClass('invalid');</span>
+<span >							error++; // increase the error number by 1</span>
+<span >							err_msg=err_msg+'Please enter a valid '+ placeholder+'&lt;br /&gt;';</span>
+<span >						}else{</span>
+<span >							input.removeClass('invalid');</span>
+<span >							input.addClass('valid');</span>
+<span >						}</span>
+<span >					}</span>
+<span >				}</span>
+<span >			}</span>
+<span >		);</span>
+<span >	}</span></pre><p >
+	<span >Some
+	of the other functions used in validation</span></p>
+	<pre class="western" ><span > </span>
+<span > // build array of characters to replace/escape</span>
+<span > var entityMap = {</span>
+<span >  &quot;&amp;&quot;: &quot;&amp;amp;&quot;,</span>
+<span >  &quot;&lt;&quot;: &quot;&amp;lt;&quot;,</span>
+<span >  &quot;&gt;&quot;: &quot;&amp;gt;&quot;,</span>
+<span >  '&quot;': '&amp;quot;',</span>
+<span >  &quot;'&quot;: '&amp;#39;',</span>
+<span >  &quot;/&quot;: '&amp;#x2F;'</span>
+<span > };</span>
+
+<span > // strip and escape any tags or invalid characters from string</span>
+<span > function escapeHtml(string) {</span>
+<span >  return String(string).replace(/[&amp;&lt;&gt;&quot;'\/]/g, function (s) {</span>
+<span >   return entityMap[s];</span>
+<span >  });</span>
+<span > }</span>
+<span > </span>
+<span > // check if string contains any tags</span>
+<span > function IsContainsTags(string){</span>
+<span >  var expRe = /(&lt;([^&gt;]+)&gt;)/ig;</span>
+<span >  return expRe.test(string);</span>
+<span > }</span></pre><p>
+	</section>
+<section id="cookies">
+	<h3 class="western"><span >Cookies</span></h3>
+	<hr/>
+
+	<p><span ><strong>Get,
+	Check and Set Cookies</strong></span></p>
+	<p><span ><strong><span style="font-weight: normal">When
+	the plugin is instantiated it will check if the user already
+	completed this process and is eligible to view the content.</span></strong></span></p>
+	<pre class="western"><span >/*</span>
+<span >     * get available cookies for verification check</span>
+<span >     */</span>
+<span >	function getCookie(cname) {</span>
+<span >		var name = cname + &quot;=&quot;;</span>
+<span >		var ca = document.cookie.split(';');</span>
+<span >		for(var i=0; i&lt;ca.length; i++) {</span>
+<span >			var c = ca[i];</span>
+<span >			while (c.charAt(0)==' ') c = c.substring(1);</span>
+<span >			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);</span>
+<span >		}</span>
+<span >		return &quot;&quot;;</span>
+<span >	}</span>
+
+
+<span >	/*</span>
+<span >     * set the coockie to remember the user the next time they visit this page</span>
+<span >     */</span>
+<span >	function setCookie(cname, cvalue, exdays) {</span>
+<span >		var d = new Date();</span>
+<span >		d.setTime(d.getTime() + (exdays*24*60*60*1000));</span>
+<span >		var expires = &quot;expires=&quot;+d.toUTCString();</span>
+<span >		document.cookie = cname + &quot;=&quot; + cvalue + &quot;; &quot; + expires;</span>
+<span >	}</span>
+
+<span >/*</span>
+<span >     * verify the user, </span>
+<span >     * check if they are eligible, </span>
+<span >     * set the parameters to remember the user</span>
+<span >     */</span>
+<span >	function checkCookie() {</span>
+<span >		var contents = getCookie(&quot;accessPageContent&quot;);</span>
+<span >		if (contents != &quot;&quot; &amp;&amp; (contents &gt; 0)) {</span>
+<span >			//alert(&quot;Welcome again &quot; + contents);</span>
+<span >			jQuery('.age-gate-way-overlay').addClass(&quot;age-gate-way-none&quot;);</span>
+<span >			jQuery('.age-gate-way-overlay').removeClass(&quot;age_gate_way_wrap&quot;);</span>
+<span >		} else {</span>
+<span >			//alert(&quot;no&quot;);</span>
+<span >			jQuery('.age-gate-way-overlay').removeClass(&quot;age-gate-way-none&quot;);</span>
+<span >			jQuery('.age-gate-way-overlay').addClass(&quot;age_gate_way_wrap&quot;);</span>
+<span >			jQuery(&quot;.age-gate-way-submit-data&quot;).click(function(e){</span>
+<span >                e.preventDefault();</span>
+<span >				Validate_Section('.age-gate-way-overlay');</span>
+<span >				if(error&lt;1){</span>
+<span >					err_msg = '';</span>
+<span >					jQuery('#age-gate-way-err').html('');</span>
+<span >					post_data();</span>
+<span >				}else{</span>
+<span >					jQuery('#age-gate-way-err').html(err_msg);</span>
+<span >				}</span>
+<span >			});</span>
+<span >		}</span>
+<span >	}</span>
+
+</pre></section>
+<section id="deployment">
+	<h3 class="western"><span >Deployment</span></h3>
+	<hr/>
+
+	<h3 class="western"><span >CSS
+	and Theme Deployment</span></h3>
+	<p><span >The
+	form themes are easy to deploy, all you have to do is set which
+	theme you wish to display in the page. Go to the Age-Gateway Menu in
+	the Admin Dashboard area and select the theme style.</span></p>
+	<p><span >&nbsp;</span></p>
+	<h3 class="western"><span >Plugin
+	Deployment</span></h3>
+	<p><span >Install
+	and activate the plugin, once this is done configure your settings
+	in the  Age-Gateway Menu in the Admin Dashboard area. Add the
+	shortcode to any page or post using <strong>Add </strong><strong>Age-Gateway</strong><strong>
+	Button</strong> by opening the page in edit mode, click the <strong>Add
+	</strong><strong>Age-Gateway</strong><strong> Button</strong> a
+	shortcode similar to the one below will be added to your post or
+	page. </span>
+	</p>
+	<p><span><pre class="western">[age-gateway]</pre></span></p>
+	</section>
+<section id="security">
+	<h3 class="western"><span >Security</span></h3>
+	<hr/>
+
+	<p><span >Given
+	the rising attacks on websites, its imperative that every developer
+	and user take it upon himself to ensure security of the information
+	provided on the website.</span></p>
+	<p><span >Its
+	in the light of this that I have provided, what&nbsp; I think are
+	the minimum measures taken to secure the Age-Gateway Plugin from
+	attacks such as XSS, CSRF and Javascript Injections.</span></p>
+	<p ><span ><strong>1.
+	Specifying the Content Type</span></strong></p>
+	<p ><span >Specifying
+	the type of content the page is going to be handling ensures that
+	the server only encodes only those characters included in the utf-8
+	character set. Most of the wordpress themes have incorporated this
+	however double checking is good just in case.</span></p>
+	<pre class="western"><span >&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</span></pre><p >
+	<span >&nbsp;</span></p>
+	<p ><span ><strong>2.
+	Use of the CSP</span></strong></p>
+	<p ><span >The
+	main goal of Content Security Policy is to prevent malicious code
+	from being injected into a website and executed within the context
+	of that site. Hence, a recurring theme in CSP is to prevent the
+	creation of JavaScript code from potentially tainted strings.</span></p>
+	<pre class="western"><span >&lt;meta http-equiv=&quot;X-Content-Security-Policy&quot; content=&quot;allow self&quot; /&gt;</span></pre><p >
+	<span >Instead
+	of blindly trusting <em>everything</em> that a server delivers, CSP
+	defines the <code class="western">Content-Security-Policy</code>
+	HTTP header that allows you to create a whitelist of sources of
+	trusted content, and instructs the browser to only execute or render
+	resources from those sources.</span></p>
+	<p ><span >Please
+	make sure to read more about this while you implement it,&nbsp; in
+	order for this tool to be more effective.</span></p>
+	<p ><span >&nbsp;</span></p>
+	<p ><span ><strong>3.
+	Prevent XSS attacks by filtering out HTML tags from strings provided
+	by users.</span></strong></p>
+	<p ><span >I
+	have used the following functions to strip/ escape HTML tags from
+	string got from the input fields.</span></p>
+	<p ><span >replace/
+	strip any tags from string</span></p>
+	<pre class="western" ><span >val = val.replace(/(&lt;([^&gt;]+)&gt;)/ig,&quot;&quot;);</span></pre><p >
+	<span >&nbsp;</span></p>
+	<p ><span >check
+	for any tags in string</span></p>
+	<pre class="western" ><span > IsContainsTags(val)==true</span>
+<span >    </span>
+<span >    // check if string contains any tags</span>
+<span > function IsContainsTags(string){</span>
+<span >  var expRe = /(&lt;([^&gt;]+)&gt;)/ig;</span>
+<span >  return expRe.test(string);</span>
+<span > }</span></pre><p>
+	<span >&nbsp;</span></p>
+	<p ><span >escape
+	/ strip any tags from string</span></p>
+	<pre class="western" ><span >val = escapeHtml(val);</span>
+
+<span >    // build array of characters to replace/escape</span>
+<span > var entityMap = {</span>
+<span >  &quot;&amp;&quot;: &quot;&amp;amp;&quot;,</span>
+<span >  &quot;&lt;&quot;: &quot;&amp;lt;&quot;,</span>
+<span >  &quot;&gt;&quot;: &quot;&amp;gt;&quot;,</span>
+<span >  '&quot;': '&amp;quot;',</span>
+<span >  &quot;'&quot;: '&amp;#39;',</span>
+<span >  &quot;/&quot;: '&amp;#x2F;'</span>
+<span > };</span>
+
+<span > // strip and escape any tags or invalid characters from string</span>
+<span > function escapeHtml(string) {</span>
+<span >  return String(string).replace(/[&amp;&lt;&gt;&quot;'\/]/g, function (s) {</span>
+<span >   return entityMap[s];</span>
+<span >  });</span>
+<span > }</span></pre><p>
+	<span >&nbsp;</span></p>
+	<p><span >As
+	mentioned earlier these in addition to the validation done in the
+	functions of the Age-Gateway jQuery script, may be basic
+	measurements of securing your information against attacks. You may
+	need to do much more than this, do alot of research on internet
+	security and&nbsp; if you intend to use this form in/with other
+	platforms be sure to implement security on those platforms also.
+	There are some very usefull wordpress plugins that help you secure
+	your content. It would be a good idea to explore them for better and
+	secure your users and content.</span></p>
+	</section>
+<section id="sources_and_credits">
+	<h3 class="western"><span >Sources
+	and Credits</span></h3>
+	<hr/>
+
+	<p><span >Thank
+	you for purchasing this item, I will be available to take up any
+	questions concerning this Age-Gateway. Your comments and thoughts
+	are also welcome.</span></p>
+	<p><span ><br/>
+<strong>Paul
+	Shopi</span></strong></p>
+	<hr/>
+
+	<p><span >Copyright 
+	Paul Shopi &copy2017 made with the <a href="http://rxa.li/documenter">Documenter
+	v2.0</a></span></p>
+</div>
+<p><!-- /container --><!-- Le javascript
+    ================================================== --><!-- Placed at the end of the document so the pages load faster --><script>
+document.createElement('section');var duration='500',easing='swing';
+
+
+</script><script src="assets/js/jquery.js"></script><script src="assets/js/jquery.scrollTo.js"></script><script src="assets/js/jquery.easing.js"></script><script src="assets/js/scripts.js"></script><script src="assets/js/google-code-prettify/prettify.js"></script><script src="assets/js/bootstrap-min.js"></script></p>
+</body>
+</html>
